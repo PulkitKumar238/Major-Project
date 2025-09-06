@@ -106,24 +106,24 @@ export default function EventsPage() {
               <input
                 type="text"
                 placeholder="Search events..."
-                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 placeholder-gray-500 bg-white"
               />
             </div>
-            <select className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+            <select className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 bg-white">
               <option value="">Event Type</option>
               <option value="conference">Conference</option>
               <option value="workshop">Workshop</option>
               <option value="seminar">Seminar</option>
               <option value="symposium">Symposium</option>
             </select>
-            <select className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+            <select className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 bg-white">
               <option value="">Category</option>
               <option value="computer-science">Computer Science</option>
               <option value="medicine">Medicine</option>
               <option value="physics">Physics</option>
               <option value="environmental-science">Environmental Science</option>
             </select>
-            <select className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+            <select className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 bg-white">
               <option value="">Location</option>
               <option value="usa">United States</option>
               <option value="uk">United Kingdom</option>
