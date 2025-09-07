@@ -2,7 +2,7 @@
 
 import { Search, Calendar, MapPin, Users } from 'lucide-react'
 import { useState } from 'react'
-import { handleSearchEvents } from '@/utils/eventHandlers'
+import { handleSearchEvents } from '../utils/eventHandlers'
 
 export default function Hero() {
   const [searchTerm, setSearchTerm] = useState('')

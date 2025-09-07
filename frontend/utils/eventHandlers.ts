@@ -1,4 +1,4 @@
-import { apiClient } from '@/lib/api';
+import { apiClient } from '../lib/api';
 
 export const handleRegisterEvent = async (eventId: string, eventTitle: string, website?: string) => {
   try {

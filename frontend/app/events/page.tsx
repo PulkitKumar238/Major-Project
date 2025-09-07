@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
-import { apiClient } from '@/lib/api';
-import { handleRegisterEvent, handleLearnMore } from '@/utils/eventHandlers';
+import { apiClient } from '../../lib/api';
+import { handleRegisterEvent, handleLearnMore } from '../../utils/eventHandlers';
 import { Calendar, MapPin, Users, Clock, ExternalLink, Filter, Search } from 'lucide-react';
 
 interface Event {

@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { Calendar, MapPin, Users, FileText, Upload, CheckCircle } from 'lucide-react'
-import { handleSubmitEvent } from '@/utils/eventHandlers'
+import { handleSubmitEvent } from '../../utils/eventHandlers'
 
 export default function SubmitEventPage() {
   const [formData, setFormData] = useState({
