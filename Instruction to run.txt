@@ -1,0 +1,45 @@
+Instruction to run
+
+This file contains all the details about how to install and run the Event Sphere project.
+
+### Prerequisites
+Before you begin, ensure you have the following installed on your system:
+1. Node.js (v18 or higher recommended)
+2. npm (Node Package Manager)
+3. MongoDB (Local installation or a MongoDB Atlas connection string)
+
+### 1. Backend Setup
+1. Open a terminal and navigate to the backend directory:
+   cd backend
+2. Install the required dependencies:
+   npm install
+3. Configure Environment Variables:
+   - Create a `.env` file in the backend directory (or use `.env.example` as a template).
+   - Provide the necessary variables, such as PORT, MONGO_URI, and JWT_SECRET. Example:
+     PORT=5000
+     MONGO_URI=your_mongodb_connection_string
+     JWT_SECRET=your_jwt_secret_key
+4. Start the backend server:
+   - For development mode (auto-restarts on changes):
+     npm run dev
+   - For production mode:
+     npm start
+5. Result: The backend server should now be running, typically accessible at http://localhost:5000.
+
+### 2. Frontend Setup
+1. Open a new terminal and navigate to the frontend directory:
+   cd frontend
+2. Install the required dependencies:
+   npm install
+3. Configure Environment Variables:
+   - Create a `.env.local` file in the frontend directory if any specific environment variables are needed (e.g., pointing to the backend API). Example:
+     NEXT_PUBLIC_API_URL=http://localhost:5000/api
+4. Start the frontend development server:
+   npm run dev
+5. Result: The Next.js frontend should now be running. Open your browser and navigate to http://localhost:3000 to view the application.
+
+### Expected Results and Format
+- Once both servers are running, the web application will be accessible via a standard web browser (Chrome, Firefox, Safari, etc.).
+- Users can interact with the graphical user interface to view, register, or manage academic events.
+- Data such as user profiles and event details are generated and stored in the MongoDB database in JSON format.
+- API responses from the backend are also returned in JSON format.
